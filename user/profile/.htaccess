@@ -1,0 +1,6 @@
+#Rewrite module on
+RewriteEngine on
+
+#Rewrite modules for edit
+RewriteRule ^dashboard dashboard.php
+

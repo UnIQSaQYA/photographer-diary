@@ -1,0 +1,21 @@
+#Rewrite module on
+RewriteEngine on
+
+#Rewrite modules for photographer
+RewriteRule ^photographer$ photographer.php [NC,L]
+
+#Rewrite modules for home
+RewriteRule ^home$ index.php [NC,L]
+
+#Rewrite modules for most viewed
+RewriteRule ^most_viewed$ most_viewed.php [NC,L]
+
+#Rewrite modules for top_ten
+RewriteRule ^top_ten$ top_ten.php [NC,L]
+
+#Rewrite modules for featured
+RewriteRule ^featured$ featured.php [NC,L]
+
+
+#Rewrite modules for Photographer detail
+RewriteRule ^([0-9a-zA-Z-]+)$ photographer_detail.php?u=$1 [NC,L]

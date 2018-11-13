@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+#Rewrite module on
+RewriteEngine on
+
+#Rewrite modules for login
+RewriteRule ^login login.php [NC,L]
+
+#Rewrite modules for register
+RewriteRule ^register register.php [NC,L]
+
+#Rewrite modules for dashboard
+RewriteRule ^dashboard dashboard.php
+</IfModule>
